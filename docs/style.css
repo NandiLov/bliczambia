@@ -1,0 +1,447 @@
+
+/* Reset some default margin/padding and add basic styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Style the logo */
+.logo img {
+    max-width: 100px; /* Adjust the width to fit your logo */
+    height: auto;
+}
+
+/* Style the login/logout links */
+.user a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Add some spacing between the links */
+.user a + a {
+    margin-left: 10px;
+}
+
+
+
+/* styles for navigation bar */
+nav {
+  /*  background-color: #333; */
+    color: #fff;
+    text-align: center;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+
+}
+/* nav texts */
+li a {
+    color: black;
+}
+
+/* CSS for the hero section */
+.hero {
+    background-image: url('img/banner.jpg'); /* Replace 'your-image.jpg' with your image URL */
+    background-size: cover; /* This scales the background image to cover the entire element */
+    background-position: center; /* This centers the background image horizontally and vertically */
+    padding-top: 50%; /* Maintain aspect ratio (adjust as needed) */
+    position: relative;
+    height: auto;
+}
+/* CSS for hero content */
+.hero-content {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+/* CSS for the hero "Order" button */
+/* CSS for the rounded button */
+.rounded-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; /* Adjust the radius to control the roundness */
+    background-color: #cf0909; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
+}
+
+.rounded-button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+
+
+
+
+/* CSS for the "About" section */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style for the image container */
+.about-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+/* Style for the image itself */
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for the text container */
+.about-text {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+}
+
+/* CSS for the products section */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* CSS for the "Order" button */
+.order-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a hover effect */
+}
+
+.order-button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for client logo */
+
+
+/* CSS for the "Clients" section */
+.clients {
+    overflow: hidden; /* Hide logos outside the container */
+    white-space: nowrap; /* Prevent logos from wrapping to the next line */
+}
+
+/* CSS for individual client logos */
+.client-logo {
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing between logos */
+    animation: slide 10s linear infinite; /* Adjust duration as needed */
+}
+
+/* CSS keyframes animation for sliding */
+@keyframes slide {
+    0% {
+        transform: translateX(100%); /* Start off the screen from right to left */
+    }
+    100% {
+        transform: translateX(-100%); /* Move off the screen from left to right */
+    }
+}
+/* Media query for screens smaller than 768px (typical for phones) */
+@media screen and (max-width: 768px) {
+    .client-logo {
+        margin-right: 10px; /* Adjust spacing for smaller screens */
+    }
+}
+
+
+
+  
+/* CSS for the Previous Work section */
+.previous-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed */
+    padding: 20px;
+ }
+ 
+
+ /* CSS for the Facebook link */
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #1877f2; /* Facebook blue */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.project a:hover {
+    background-color: #0e62cb; /* Darker blue on hover */
+}
+
+.work h1 {
+    text-align: center;
+
+}
+
+
+/* CSS for the logo section */
+.logo-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust alignment as needed */
+    padding: 20px; /* Add spacing around the logos */
+}
+
+/* CSS for individual client logos */
+.client-logo {
+    margin: 10px; /* Adjust spacing between logos */
+}
+
+.client-logo img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Add a smooth hover effect */
+}
+
+.client-logo img:hover {
+    transform: scale(1.1); /* Scale the logo on hover (adjust as needed) */
+}
+
+
+/* CSS for the contact-us section */
+/* CSS for the contact-us section */
+.contact-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #f4f4f4;*/
+    padding: 40px;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+}
+
+.social-media {
+    flex: 1;
+    text-align: right;
+}
+
+.contact-info h2, .social-media h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info p, .social-media ul {
+    margin-bottom: 10px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-media ul li:last-child {
+    margin-right: 0;
+}
+
+/* Style the social media icons */
+.social-media img {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    border-radius: 50%; /* Make the icons circular */
+    transition: transform 0.3s ease; /* Add a slight hover effect */
+}
+
+/* Hover effect for social media icons */
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+/* CSS for the contact-us section */
+.contact-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 40px;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+}
+
+.social-media {
+    flex: 1;
+    text-align: right;
+}
+
+.contact-info h2, .social-media h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info p, .social-media ul {
+    margin-bottom: 10px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.social-media ul li:last-child {
+    margin-right: 0;
+}
+
+/* Font Awesome icons (make sure to include Font Awesome CSS) */
+.fas, .far, .fab {
+    font-size: inherit;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.fas:hover, .far:hover, .fab:hover {
+    color: #0056b3;
+}
+
+/* CSS for the site-footer */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Add some padding to create space around the logo and text */
+}
+
+.footer-logo img {
+    width: 50px; /* Adjust the logo size as needed */
+    height: auto;
+}
+
+.copyright {
+    font-size: 14px;
+    opacity: 0.8;
+    flex-grow: 1; /* This makes the copyright text take up available space and center it */
+    text-align: center; /* Center-align the copyright text */
+}
+
+
+
+
+
+
+
+
+/* Media query for screens smaller than 768px (typical for phones) */
+@media (max-width: 768px) {
+.logo img {
+    max-width: 30%; /* Adjust the logo size for smaller screens */
+    }
+
+
+/* Adjust the hero size for smaller screens */
+.hero {
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-image,
+.hero-text {
+    max-width: 100%;
+}
+    /* Adjust the about section size for smaller screens*/
+.about {
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-image,
+.about-text {
+    max-width: 100%;
+}
+
+}
+
+
+
+/* Media query for screens smaller than 330px (typical for phones) */
+@media (max-width: 330px) {
+
+.products {
+    max-width: 180px;
+}
+.product img {
+    max-width: 180px
+}
+.order-button {
+    max-width: 180px;
+}
+.product {
+    max-width: 180px;
+}
+}
